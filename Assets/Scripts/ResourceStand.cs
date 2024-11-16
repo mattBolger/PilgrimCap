@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class ResourceStand 
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Stands", order = 1)]
+public class ResourceStand : ScriptableObject
 {
-    private:
-        string standName;
-    int standLevel;
+    public string standName;
 
-    public:
-        
+    public int standLevel;
 
+    public float standStartingPrice;
+
+    public Color standColor;
+
+    public Sprite image;
 };
