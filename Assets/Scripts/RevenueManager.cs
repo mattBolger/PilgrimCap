@@ -16,6 +16,11 @@ public class RevenueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    void FixedUpdate()
+    {
         Timer();
         Income();
     }
@@ -24,6 +29,7 @@ public class RevenueManager : MonoBehaviour
     void Timer()
     {
         gameTime += Time.deltaTime;
+
     }
 
     // Checks to see if the stand can generate income
@@ -32,10 +38,11 @@ public class RevenueManager : MonoBehaviour
         // Iterate through each stand
         for (int i = 0; i < stands.Length; i++)
         {
+            Debug.Log((gameTime % stands[i].incomePerSecond) * 100.0f * .01f);
+
             // if the remainder is 0 add money (float math might not work)
-            if (Mathf.Round(gameTime % stands[i].incomePerSecond) == 0 && gameTime > 0)
+            if (Mathf.Round((gameTime % stands[i].incomePerSecond) * 10.0f) * .1f == 0 && gameTime > 0)
             {
-                Debug.Log("Add $" + stands[i].income);
                 totRev.totalRevenue += stands[i].income;
             }
         }

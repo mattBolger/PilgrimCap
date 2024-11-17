@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Corn Stand
   m_EditorClassIdentifier: 
   standName: Corn Stand
-  standLevel: 1
+  standLevel: 9
   standStartingPrice: 1
-  income: 2.25
-  incomePerSecond: 3
+  income: 25.978567
+  incomePerSecond: 10
   standColor: {r: 1, g: 0.99557805, b: 0, a: 1}
   image: {fileID: 21300000, guid: e80d8c0ade2f7dd4cb85927d667235c1, type: 3}

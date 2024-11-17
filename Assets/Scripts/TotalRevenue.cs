@@ -22,6 +22,6 @@ public class TotalRevenue : MonoBehaviour
     // Sends the total revenue to a string to be displayed
     void UpdateTotalRevenue()
     {
-        textMeshProUGUI.text = totalRevenue.ToString();
+        textMeshProUGUI.text = totalRevenue.ToString("C");
     }
 }

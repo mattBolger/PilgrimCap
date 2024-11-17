@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96201817df9d8c642a3f53bfd48d470e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalRevenue: {fileID: 376534094}
 --- !u!114 &376534097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,7 +1051,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 376534096}
         m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: levelUp
+        m_MethodName: LevelUp
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 70df3ea68e2f3c244b832c8b55cc2390, type: 2}

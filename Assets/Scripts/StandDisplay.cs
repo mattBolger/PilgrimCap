@@ -37,8 +37,8 @@ public class StandDisplay : MonoBehaviour
         // Set the values and update them as they increment
         levelText.text = stand.standLevel.ToString();
 
-        income.text = stand.income.ToString();
+        income.text = stand.income.ToString("C");
 
-        standLevelUpPrice.text = "$" + (stand.standStartingPrice * Mathf.Pow(1.25f, stand.standLevel)).ToString();
+        standLevelUpPrice.text = (stand.standStartingPrice * Mathf.Pow(1.25f, stand.standLevel)).ToString("C");
     }
 }
