@@ -5,8 +5,10 @@ using TMPro;
 
 public class TotalRevenue : MonoBehaviour
 {
-    float totalRevenue;
+    // The total money owned by the player
+    public float totalRevenue;
 
+    // In-game UI reference
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
 
     // Update is called once per frame

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelUpButton : MonoBehaviour
 {
+    // Takes the stand reference, adds 1 to the level and updates the income
     public void levelUp(ResourceStand stand)
     {
         stand.standLevel += 1;

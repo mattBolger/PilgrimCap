@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 376534095}
   - component: {fileID: 376534094}
   - component: {fileID: 376534096}
+  - component: {fileID: 376534097}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -426,6 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abba411dbf572043baf8d3dbfc6b0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalRevenue: 0
   textMeshProUGUI: {fileID: 1138685466}
 --- !u!4 &376534095
 Transform:
@@ -454,6 +456,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96201817df9d8c642a3f53bfd48d470e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &376534097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376534093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325f352e4d0e13d4380cd339fbc7658e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stands:
+  - {fileID: 11400000, guid: 70df3ea68e2f3c244b832c8b55cc2390, type: 2}
+  totRev: {fileID: 376534094}
 --- !u!1 &427531314
 GameObject:
   m_ObjectHideFlags: 0
