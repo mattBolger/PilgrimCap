@@ -17,6 +17,10 @@ public class StandDisplay : MonoBehaviour
 
     public TextMeshProUGUI standLevelUpPrice;
 
+    public TextMeshProUGUI income;
+
+    int incomePerSec;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +29,17 @@ public class StandDisplay : MonoBehaviour
         artworkImage.sprite = stand.image;
 
         this.GetComponent<Image>().color = stand.standColor;
+
+        //This is for testing, ask jose about saved data
+        stand.standLevel = 0;
     }
 
     void Update()
     {
         levelText.text = stand.standLevel.ToString();
 
-        standLevelUpPrice.text = (stand.standStartingPrice * Mathf.Pow(1.25f, stand.standLevel)).ToString();
+        income.text = stand.income.ToString();
+
+        standLevelUpPrice.text = "$" + (stand.standStartingPrice * Mathf.Pow(1.25f, stand.standLevel)).ToString();
     }
 }

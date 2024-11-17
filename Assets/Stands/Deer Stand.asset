@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standName: Deer Stand
   standLevel: 0
+  standStartingPrice: 600
   standColor: {r: 0.5773585, g: 0.41617107, b: 0, a: 1}
   image: {fileID: 21300000, guid: be831e28162c73f46b0b0161a58a0008, type: 3}

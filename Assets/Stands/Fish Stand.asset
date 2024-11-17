@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standName: Fish Stand
   standLevel: 0
+  standStartingPrice: 150
   standColor: {r: 0, g: 0.73092794, b: 1, a: 1}
   image: {fileID: 21300000, guid: 8592934ee049b5e40b3278233d89afe3, type: 3}
