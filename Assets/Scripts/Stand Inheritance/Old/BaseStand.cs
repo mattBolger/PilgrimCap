@@ -12,10 +12,10 @@ public class BaseStand : TotalRevenue
     public int standLevel;
 
     // The starting price of the stand
-    public float standLevelUpPrice;
+    public int standLevelUpPrice;
 
     // How much money the stand generates
-    public float income;
+    public int income;
 
     // The amount of time it takes the stand to generate income
     public float incomeCooldown;
@@ -32,9 +32,9 @@ public class BaseStand : TotalRevenue
     // Level up if the player has enough money
     public virtual void LevelUp()
     {
-        if ((totalRevenue - standLevelUpPrice) >= 0)
+        if ((totalMoney - standLevelUpPrice) >= 0)
         {
-            totalRevenue -= standLevelUpPrice;
+            totalMoney -= standLevelUpPrice;
             standLevel += 1;
         }
     }
@@ -44,7 +44,7 @@ public class BaseStand : TotalRevenue
     {
         if ((gameTime - incomeCooldown) >= 0 && standLevel >= 1)
         {
-            totalRevenue += income;
+            totalMoney += income;
             gameTime = 0;
         }
     }

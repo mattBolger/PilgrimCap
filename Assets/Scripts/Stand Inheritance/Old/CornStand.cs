@@ -36,9 +36,9 @@ public class CornStand : BaseStand
     {
         standName = stand.standName;
         standLevel = stand.standLevel;
-        standLevelUpPrice = stand.standStartingPrice;
+        //standLevelUpPrice = stand.standStartingPrice;
         standColor = stand.standColor;
-        income = stand.income;
+        //income = stand.income;
         incomeCooldown = stand.incomePerSecond;
         image = stand.image;
     }

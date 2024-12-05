@@ -8,13 +8,13 @@ public class LevelUpButton : MonoBehaviour
     // Takes the stand reference, adds 1 to the level and updates the income
     public void LevelUp(ResourceStand stand)
     {
-        if ((totalRevenue.totalRevenue -= stand.standStartingPrice) >= 0)
-        {
-            stand.standLevel += 1;
+        //if ((totalRevenue.totalMoney -= stand.standStartingPrice) >= 0)
+        //{
+        //    stand.standLevel += 1;
 
-            stand.income = stand.standLevel * Mathf.Pow(1.125f, stand.standLevel);
+        //    stand.income = stand.standLevel * Mathf.Pow(1.125f, stand.standLevel);
 
-            totalRevenue.totalRevenue -= stand.standStartingPrice;
-        }
+        //    //totalRevenue.totalMoney -= stand.standStartingPrice;
+        //}
     }
 }

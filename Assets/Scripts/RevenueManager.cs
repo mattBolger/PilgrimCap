@@ -22,7 +22,7 @@ public class RevenueManager : MonoBehaviour
     void FixedUpdate()
     {
         Timer();
-        Income();
+        //Income();
     }
 
     // Keeps the time passed since the game has started
@@ -43,7 +43,7 @@ public class RevenueManager : MonoBehaviour
             // if the remainder is 0 add money (float math might not work)
             if (Mathf.Round((gameTime % stands[i].incomePerSecond) * 10.0f) * .1f == 0 && gameTime > 0)
             {
-                totRev.totalRevenue += stands[i].income;
+                //totRev.totalMoney += stands[i].income;
             }
         }
     }

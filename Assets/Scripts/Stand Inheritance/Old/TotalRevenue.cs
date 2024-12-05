@@ -6,7 +6,7 @@ using TMPro;
 public class TotalRevenue : MonoBehaviour
 {
     // The total money owned by the player
-    public float totalRevenue;
+    public int totalMoney = 1;
 
     // In-game UI reference
     [SerializeField] TextMeshProUGUI textMeshProUGUI;
@@ -22,6 +22,6 @@ public class TotalRevenue : MonoBehaviour
     // Sends the total revenue to a string to be displayed
     void UpdateTotalRevenue()
     {
-        textMeshProUGUI.text = totalRevenue.ToString("C");
+        textMeshProUGUI.text = totalMoney.ToString("C");
     }
 }
