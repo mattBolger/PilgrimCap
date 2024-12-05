@@ -4,10 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class standCorn : MonoBehaviour
+public class standFish : MonoBehaviour
 {
     // The name of the stand
-    public string standName = "Corn Stand";
+    public string standName = "Fish Stand";
 
     // Is the stand bought
     public bool standBought = false;
@@ -16,7 +16,7 @@ public class standCorn : MonoBehaviour
     public int standLevel = 0;
 
     // The price to level up the stand
-    public int levelUpPrice = 1;
+    public int levelUpPrice = 50;
 
     // The amount of money the stand brings in
     public int income = 0;
@@ -47,6 +47,7 @@ public class standCorn : MonoBehaviour
     {
         nameText.text = standName;
         artworkImage.sprite = image;
+        this.GetComponent<Image>().color = standColor;
     }
 
     // Runs every frame
@@ -91,8 +92,6 @@ public class standCorn : MonoBehaviour
     public void GameTimer()
     {
         gameTime += Time.deltaTime;
-
-        Debug.Log(gameTime);
     }
 
     public void TextUpdate()
@@ -106,6 +105,6 @@ public class standCorn : MonoBehaviour
 
     public void IncomeUpdate()
     {
-        income = standLevel;
-    }
+        income = standLevel * 2;
+    }    
 }

@@ -554,13 +554,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 2016275819}
+        m_TargetAssemblyTypeName: standDeer, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 0cd88f985c5a5aa4e8d0be43d3cc9478, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -821,13 +821,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 368956769}
+        m_TargetAssemblyTypeName: standPotatoes, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4f79022a8dcea1041a3a401d41e72785, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1429,6 +1429,7 @@ GameObject:
   - component: {fileID: 275340887}
   - component: {fileID: 275340890}
   - component: {fileID: 275340889}
+  - component: {fileID: 275340891}
   m_Layer: 5
   m_Name: Panel_2
   m_TagString: Untagged
@@ -1499,6 +1500,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275340886}
   m_CullTransparentMesh: 1
+--- !u!114 &275340891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275340886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54faadb58d1f9ed43b270a03d6ce5851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Fish Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 50
+  income: 0
+  cooldown: 20
+  standColor: {r: 0, g: 1, b: 0.9535911, a: 1}
+  image: {fileID: 21300000, guid: 8592934ee049b5e40b3278233d89afe3, type: 3}
+  nameText: {fileID: 175647195}
+  artworkImage: {fileID: 718259874}
+  levelText: {fileID: 1152214236}
+  standLevelUpPrice: {fileID: 128659790}
+  incomeText: {fileID: 1813610961}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &290713034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,6 +1747,7 @@ GameObject:
   - component: {fileID: 368956765}
   - component: {fileID: 368956768}
   - component: {fileID: 368956767}
+  - component: {fileID: 368956769}
   m_Layer: 5
   m_Name: Panel_5
   m_TagString: Untagged
@@ -1790,6 +1818,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368956764}
   m_CullTransparentMesh: 1
+--- !u!114 &368956769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368956764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6b78b9fb8309143bcf0625a2ed98f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Potatoe Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 500
+  income: 0
+  cooldown: 50
+  standColor: {r: 0.4113207, g: 0.29017025, b: 0, a: 1}
+  image: {fileID: 21300000, guid: 6b3e7be45e891794995210464d08170b, type: 3}
+  nameText: {fileID: 1087010231}
+  artworkImage: {fileID: 1073727164}
+  levelText: {fileID: 1023216917}
+  standLevelUpPrice: {fileID: 988472851}
+  incomeText: {fileID: 1895946617}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &375332726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +1990,7 @@ GameObject:
   - component: {fileID: 376534094}
   - component: {fileID: 376534096}
   - component: {fileID: 376534097}
+  - component: {fileID: 376534098}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1955,7 +2010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abba411dbf572043baf8d3dbfc6b0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalMoney: 0
+  totalMoney: 1
   textMeshProUGUI: {fileID: 1138685466}
 --- !u!4 &376534095
 Transform:
@@ -2000,6 +2055,22 @@ MonoBehaviour:
   stands:
   - {fileID: 11400000, guid: 70df3ea68e2f3c244b832c8b55cc2390, type: 2}
   totRev: {fileID: 376534094}
+--- !u!114 &376534098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376534093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25254cd2d49404b4d868b9716a584a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pilg: {fileID: 1997750690}
+  pilgSprite: {fileID: 21300000, guid: 7441db0e815c60846af56df39184e3c3, type: 3}
+  rotSpeed: 1
+  rotTime: 1.25
 --- !u!1 &391761644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,6 +3053,7 @@ GameObject:
   - component: {fileID: 577605337}
   - component: {fileID: 577605340}
   - component: {fileID: 577605339}
+  - component: {fileID: 577605341}
   m_Layer: 5
   m_Name: Panel_3
   m_TagString: Untagged
@@ -3052,6 +3124,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577605336}
   m_CullTransparentMesh: 1
+--- !u!114 &577605341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577605336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93671152cbdda34784f9735a1046291, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Turkey Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 100
+  income: 0
+  cooldown: 30
+  standColor: {r: 0.6377357, g: 0.36971277, b: 0, a: 1}
+  image: {fileID: 21300000, guid: a9743553b68f930469e0ebb47481585d, type: 3}
+  nameText: {fileID: 399297115}
+  artworkImage: {fileID: 1702197757}
+  levelText: {fileID: 1917411}
+  standLevelUpPrice: {fileID: 1401027157}
+  incomeText: {fileID: 559575587}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &614003997
 GameObject:
   m_ObjectHideFlags: 0
@@ -3767,13 +3865,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 1019174147}
+        m_TargetAssemblyTypeName: standCorn, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 70df3ea68e2f3c244b832c8b55cc2390, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3921,6 +4019,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1074455151}
+  - {fileID: 1997750691}
   m_Father: {fileID: 1008777792}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
@@ -4960,10 +5059,14 @@ MonoBehaviour:
   levelUpPrice: 1
   income: 0
   cooldown: 10
-  standColor: {r: 0, g: 0, b: 0, a: 0}
-  image: {fileID: 0}
-  gameTime: 0
-  totalRevenue: {fileID: 0}
+  standColor: {r: 1, g: 0.96931016, b: 0, a: 1}
+  image: {fileID: 21300000, guid: e80d8c0ade2f7dd4cb85927d667235c1, type: 3}
+  nameText: {fileID: 427531316}
+  artworkImage: {fileID: 1087941263}
+  levelText: {fileID: 2012986939}
+  standLevelUpPrice: {fileID: 74850664}
+  incomeText: {fileID: 704369460}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &1023216915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,13 +6523,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 577605341}
+        m_TargetAssemblyTypeName: standTurkey, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: cb3a402845fee02479e115875af002b1, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6954,13 +7057,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 275340891}
+        m_TargetAssemblyTypeName: standFish, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 1ca60d49f3c4da24898b6f8b019d96bf, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8365,6 +8468,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1970920938}
   m_CullTransparentMesh: 1
+--- !u!1 &1997750690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997750691}
+  - component: {fileID: 1997750693}
+  - component: {fileID: 1997750692}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1997750691
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997750690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 784881295}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1997750692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997750690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1997750693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997750690}
+  m_CullTransparentMesh: 1
 --- !u!1 &2012986937
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,6 +8688,7 @@ GameObject:
   - component: {fileID: 2016275815}
   - component: {fileID: 2016275818}
   - component: {fileID: 2016275817}
+  - component: {fileID: 2016275819}
   m_Layer: 5
   m_Name: Panel_4
   m_TagString: Untagged
@@ -8580,6 +8759,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016275814}
   m_CullTransparentMesh: 1
+--- !u!114 &2016275819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016275814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a69504b25df164f48a2089b6e77914b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Deer Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 300
+  income: 0
+  cooldown: 10
+  standColor: {r: 0.042324178, g: 0.6313726, b: 0, a: 1}
+  image: {fileID: 21300000, guid: be831e28162c73f46b0b0161a58a0008, type: 3}
+  nameText: {fileID: 1938886564}
+  artworkImage: {fileID: 391761646}
+  levelText: {fileID: 138243278}
+  standLevelUpPrice: {fileID: 1158042960}
+  incomeText: {fileID: 1425410897}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &2073882256
 GameObject:
   m_ObjectHideFlags: 0
