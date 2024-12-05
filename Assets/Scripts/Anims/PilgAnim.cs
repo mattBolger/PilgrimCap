@@ -29,6 +29,7 @@ public class PilgAnim : MonoBehaviour
         pilg.GetComponent<Image>().sprite = pilgSprite;
     }
 
+    // Call first time if it is the first time
     void FixedUpdate()
     {
         if (firstTime)
@@ -44,11 +45,13 @@ public class PilgAnim : MonoBehaviour
         Delay();
     }
 
+    // The game time so the delay can be done
     void Delay()
     {
         gameTime += Time.deltaTime;
     }
 
+    // The altered first time running logic
     void FirstDirectionUpdate()
     {
         if (gameTime > rotTime * .5 && canMoveClockwise == false)
@@ -65,6 +68,7 @@ public class PilgAnim : MonoBehaviour
         }
     }
 
+    // Set the direction of the pilgrim
     void DirectionUpdate()
     {
         if (gameTime > rotTime && canMoveClockwise == false)
@@ -79,12 +83,11 @@ public class PilgAnim : MonoBehaviour
         }
     }
 
+    // Rotate the pilgrim
     void RotationUpdate()
     {
         if (canMoveClockwise)
-        {
-            Debug.Log(pilg.transform.rotation.eulerAngles.z);
-            
+        {   
             pilg.transform.Rotate(0f, 0f, -rotSpeed);
         }
         else
