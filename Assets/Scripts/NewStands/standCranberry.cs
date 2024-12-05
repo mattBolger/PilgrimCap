@@ -4,10 +4,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class standTurkey : MonoBehaviour
+public class standCranberry : MonoBehaviour
 {
     // The name of the stand
-    public string standName = "Turkey Stand";
+    public string standName = "Cranberry Stand";
 
     // Is the stand bought
     public bool standBought = false;
@@ -16,13 +16,13 @@ public class standTurkey : MonoBehaviour
     public int standLevel = 0;
 
     // The price to level up the stand
-    public int levelUpPrice = 100;
+    public int levelUpPrice = 2000;
 
     // The amount of money the stand brings in
     public int income = 0;
 
     // How long it takes the stand to bring in money
-    public float cooldown = 10;
+    public float cooldown = 90;
 
     // The color of the stand
     public Color standColor;

@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 36691086}
   - component: {fileID: 36691089}
   - component: {fileID: 36691088}
+  - component: {fileID: 36691090}
   m_Layer: 5
   m_Name: Panel_6
   m_TagString: Untagged
@@ -337,6 +338,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36691085}
   m_CullTransparentMesh: 1
+--- !u!114 &36691090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36691085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80612b68a8ec2df43a16d0e373f3933f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Pumpkin Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 1000
+  income: 0
+  cooldown: 60
+  standColor: {r: 1, g: 0.63554615, b: 0, a: 1}
+  imageRef: {fileID: 0}
+  image: {fileID: 21300000, guid: 36045c4680009f54ca895f5e88b5ab65, type: 3}
+  nameText: {fileID: 614003999}
+  artworkImage: {fileID: 618328313}
+  levelText: {fileID: 909752980}
+  standLevelUpPrice: {fileID: 915477498}
+  incomeText: {fileID: 1482359596}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &61104412
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,8 +614,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -853,8 +881,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1519,7 +1547,8 @@ MonoBehaviour:
   income: 0
   cooldown: 20
   standColor: {r: 0, g: 1, b: 0.9535911, a: 1}
-  image: {fileID: 21300000, guid: 8592934ee049b5e40b3278233d89afe3, type: 3}
+  imageRef: {fileID: 0}
+  image: {fileID: 21300000, guid: 9529e5bffce14bf469b8f6ed331d5110, type: 3}
   nameText: {fileID: 175647195}
   artworkImage: {fileID: 718259874}
   levelText: {fileID: 1152214236}
@@ -1837,6 +1866,7 @@ MonoBehaviour:
   income: 0
   cooldown: 50
   standColor: {r: 0.4113207, g: 0.29017025, b: 0, a: 1}
+  imageRef: {fileID: 0}
   image: {fileID: 21300000, guid: 6b3e7be45e891794995210464d08170b, type: 3}
   nameText: {fileID: 1087010231}
   artworkImage: {fileID: 1073727164}
@@ -3143,6 +3173,7 @@ MonoBehaviour:
   income: 0
   cooldown: 30
   standColor: {r: 0.6377357, g: 0.36971277, b: 0, a: 1}
+  imageRef: {fileID: 0}
   image: {fileID: 21300000, guid: a9743553b68f930469e0ebb47481585d, type: 3}
   nameText: {fileID: 399297115}
   artworkImage: {fileID: 1702197757}
@@ -3370,6 +3401,7 @@ GameObject:
   - component: {fileID: 627505827}
   - component: {fileID: 627505830}
   - component: {fileID: 627505829}
+  - component: {fileID: 627505831}
   m_Layer: 5
   m_Name: Panel_7
   m_TagString: Untagged
@@ -3440,6 +3472,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627505826}
   m_CullTransparentMesh: 1
+--- !u!114 &627505831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627505826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556b334c2d9df02428768b5f6552f25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Hat Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 1500
+  income: 0
+  cooldown: 80
+  standColor: {r: 0.5169811, g: 0.5169811, b: 0.5169811, a: 1}
+  imageRef: {fileID: 0}
+  image: {fileID: 21300000, guid: 8098a344c31f10747b17941f7c82a548, type: 3}
+  nameText: {fileID: 290713036}
+  artworkImage: {fileID: 979957019}
+  levelText: {fileID: 1926884809}
+  standLevelUpPrice: {fileID: 1110296262}
+  incomeText: {fileID: 855839349}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &704369458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,13 +3791,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 627505831}
+        m_TargetAssemblyTypeName: standHat, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: c3824e4f3a968114897b793cd83f659b, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3764,8 +3823,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3897,8 +3956,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5016,7 +5075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
+  m_Color: {r: 0.99709713, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5060,6 +5119,7 @@ MonoBehaviour:
   income: 0
   cooldown: 10
   standColor: {r: 1, g: 0.96931016, b: 0, a: 1}
+  imageRef: {fileID: 0}
   image: {fileID: 21300000, guid: e80d8c0ade2f7dd4cb85927d667235c1, type: 3}
   nameText: {fileID: 427531316}
   artworkImage: {fileID: 1087941263}
@@ -6555,8 +6615,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6924,13 +6984,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 1620082470}
+        m_TargetAssemblyTypeName: standCranberry, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 05bd1b73f7bcab34fbc65f3e02a8f522, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6956,8 +7016,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7089,8 +7149,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7252,6 +7312,7 @@ GameObject:
   - component: {fileID: 1620082466}
   - component: {fileID: 1620082469}
   - component: {fileID: 1620082468}
+  - component: {fileID: 1620082470}
   m_Layer: 5
   m_Name: Panel_8
   m_TagString: Untagged
@@ -7322,6 +7383,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620082465}
   m_CullTransparentMesh: 1
+--- !u!114 &1620082470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620082465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8397a10ccd572a46b6606f480871d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standName: Cranberry Stand
+  standBought: 0
+  standLevel: 0
+  levelUpPrice: 2000
+  income: 0
+  cooldown: 90
+  standColor: {r: 1, g: 0, b: 0, a: 1}
+  imageRef: {fileID: 0}
+  image: {fileID: 21300000, guid: 0d2d23b264a05f643b2ee737018c691e, type: 3}
+  nameText: {fileID: 1970920940}
+  artworkImage: {fileID: 168503651}
+  levelText: {fileID: 61104414}
+  standLevelUpPrice: {fileID: 498966230}
+  incomeText: {fileID: 1626603461}
+  totalRevenue: {fileID: 376534094}
 --- !u!1 &1626603459
 GameObject:
   m_ObjectHideFlags: 0
@@ -7539,13 +7627,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 376534096}
-        m_TargetAssemblyTypeName: LevelUpButton, Assembly-CSharp
-        m_MethodName: LevelUp
-        m_Mode: 2
+      - m_Target: {fileID: 36691090}
+        m_TargetAssemblyTypeName: standPumpkin, Assembly-CSharp
+        m_MethodName: LevelUpButton
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 9b3ae3d2240c4ab4fabdd90c30407e8e, type: 2}
-          m_ObjectArgumentAssemblyTypeName: ResourceStand, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7571,8 +7659,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c0c0fb2cb4a8c9941be3619cbaa413b5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8778,6 +8866,7 @@ MonoBehaviour:
   income: 0
   cooldown: 10
   standColor: {r: 0.042324178, g: 0.6313726, b: 0, a: 1}
+  imageRef: {fileID: 0}
   image: {fileID: 21300000, guid: be831e28162c73f46b0b0161a58a0008, type: 3}
   nameText: {fileID: 1938886564}
   artworkImage: {fileID: 391761646}

@@ -27,6 +27,8 @@ public class standPotatoes : MonoBehaviour
     // The color of the stand
     public Color standColor;
 
+    public Image imageRef;
+
     // The image of the stand
     public Sprite image;
 
@@ -47,7 +49,8 @@ public class standPotatoes : MonoBehaviour
     {
         nameText.text = standName;
         artworkImage.sprite = image;
-        this.GetComponent<Image>().color = standColor;
+        imageRef = this.GetComponent<Image>();
+        imageRef.color = standColor;
     }
 
     // Runs every frame
@@ -57,6 +60,11 @@ public class standPotatoes : MonoBehaviour
         TextUpdate();
         IncomeUpdate();
         Income();
+        if (standBought)
+        {
+            CooldownVisual();
+
+        }
     }
 
     // Level up button that all stands will inherit
@@ -106,5 +114,16 @@ public class standPotatoes : MonoBehaviour
     public void IncomeUpdate()
     {
         income = standLevel * 5;
-    }    
+    }
+
+    void CooldownVisual()
+    {
+        float percent = (gameTime / cooldown) * 100;
+
+        var tempColor = standColor;
+
+        tempColor.a = percent / 100;
+
+        imageRef.color = tempColor;
+    }
 }
