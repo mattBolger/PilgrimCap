@@ -35,6 +35,9 @@ public class standTurkey : MonoBehaviour
     // The time of the game
     float gameTime;
 
+    // Manager ref for update particle functions
+    public ParticleManager particleManager;
+
     // In-game UI references
     public TextMeshProUGUI nameText;
     public Image artworkImage;
@@ -75,12 +78,13 @@ public class standTurkey : MonoBehaviour
             totalRevenue.totalMoney -= levelUpPrice;
             standBought = true;
             standLevel += 1;
-            
+            particleManager.UpdateTurkeyParticles();
         }
         else if (totalRevenue.totalMoney >= levelUpPrice)
         {
             totalRevenue.totalMoney -= levelUpPrice;
             standLevel += 1;
+            particleManager.UpdateTurkeyParticles();
         }
 
     }
