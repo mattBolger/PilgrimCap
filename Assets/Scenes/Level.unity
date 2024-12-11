@@ -24477,9 +24477,9 @@ MonoBehaviour:
   standName: Corn Stand
   standBought: 0
   standLevel: 0
-  levelUpPrice: 1
+  levelUpPriceInitial: 1
   income: 0
-  cooldown: 10
+  cooldown: 3
   standColor: {r: 1, g: 0.96931016, b: 0, a: 1}
   imageRef: {fileID: 0}
   image: {fileID: 21300000, guid: 47e40b553423c9743864fbfb39f80fd0, type: 3}

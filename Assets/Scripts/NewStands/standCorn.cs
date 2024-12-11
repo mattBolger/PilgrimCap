@@ -16,13 +16,13 @@ public class standCorn : MonoBehaviour
     public int standLevel = 0;
 
     // The price to level up the stand
-    public int levelUpPrice = 1;
+    public int levelUpPriceInitial = 1;
 
     // The amount of money the stand brings in
     public int income = 0;
 
     // How long it takes the stand to bring in money
-    public float cooldown = 10;
+    float cooldown = 3;
 
     // The color of the stand
     public Color standColor;
@@ -73,18 +73,20 @@ public class standCorn : MonoBehaviour
     // Level up button that all stands will inherit
     public void LevelUpButton()
     {
-        if (standBought != true && totalRevenue.totalMoney >= levelUpPrice) 
+        if (standBought != true && totalRevenue.totalMoney >= levelUpPriceInitial) 
         {
-            totalRevenue.totalMoney -= levelUpPrice;
+            totalRevenue.totalMoney -= levelUpPriceInitial;
             standBought = true;
             standLevel += 1;
             particleManager.UpdateCornParticles();
+            levelUpPriceInitial = ((int)(levelUpPriceInitial * 1.14f));
         }
-        else if (totalRevenue.totalMoney >= levelUpPrice)
+        else if (totalRevenue.totalMoney >= levelUpPriceInitial)
         {
-            totalRevenue.totalMoney -= levelUpPrice;
+            totalRevenue.totalMoney -= levelUpPriceInitial;
             standLevel += 1;
             particleManager.UpdateCornParticles();
+            levelUpPriceInitial = ((int)(levelUpPriceInitial * 1.14f));
         }
 
     }
@@ -112,7 +114,7 @@ public class standCorn : MonoBehaviour
 
         incomeText.text = income.ToString("C");
 
-        standLevelUpPrice.text = levelUpPrice.ToString("C");
+        standLevelUpPrice.text = levelUpPriceInitial.ToString("C");
     }
 
     public void IncomeUpdate()
