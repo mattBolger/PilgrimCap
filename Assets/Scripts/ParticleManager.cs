@@ -41,6 +41,17 @@ public class ParticleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ActivateParticles();
+        UpdateParticles();
+    }
+
+    void UpdateParticles()
+    {
+        //cornParticles.
+    }
+
+    void ActivateParticles()
+    {
         if (corn.standBought == true)
         {
             cornParticles.gameObject.SetActive(true);
