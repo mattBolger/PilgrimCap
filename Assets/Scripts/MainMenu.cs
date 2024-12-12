@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
         howToPlay.SetActive(false);
     }
 
-    void PlayAudio()
+    public void PlayAudio()
     {
         audioSource.Play();
     }

@@ -32,4 +32,9 @@ public class PauseMenu : MonoBehaviour
         audioSource.Play();
         Application.Quit();
     }
+
+    public void PlayAudio()
+    {
+        audioSource.Play();
+    }
 }

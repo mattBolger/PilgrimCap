@@ -35,6 +35,8 @@ public class standHat : MonoBehaviour
     // The time of the game
     float gameTime;
 
+    public AudioSource audioSource;
+
     // Manager ref for update particle functions
     public ParticleManager particleManager;
 
@@ -79,12 +81,14 @@ public class standHat : MonoBehaviour
             standBought = true;
             standLevel += 1;
             particleManager.UpdateHatParticles();
+            audioSource.Play();
         }
         else if (totalRevenue.totalMoney >= levelUpPrice)
         {
             totalRevenue.totalMoney -= levelUpPrice;
             standLevel += 1;
             particleManager.UpdateHatParticles();
+            audioSource.Play();
         }
 
     }

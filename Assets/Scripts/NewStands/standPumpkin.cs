@@ -35,6 +35,8 @@ public class standPumpkin : MonoBehaviour
     // The time of the game
     float gameTime;
 
+    public AudioSource audioSource;
+
     // Manager ref for update particle functions
     public ParticleManager particleManager;
 
@@ -79,13 +81,15 @@ public class standPumpkin : MonoBehaviour
             standBought = true;
             standLevel += 1;
             particleManager.UpdatePumpkinParticles();
-            
+            audioSource.Play();
+
         }
         else if (totalRevenue.totalMoney >= levelUpPrice)
         {
             totalRevenue.totalMoney -= levelUpPrice;
             standLevel += 1;
             particleManager.UpdatePumpkinParticles();
+            audioSource.Play();
         }
 
     }

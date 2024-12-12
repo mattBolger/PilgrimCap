@@ -35,6 +35,8 @@ public class standCorn : MonoBehaviour
     // The time of the game
     float gameTime;
 
+    public AudioSource audioSource;
+
     // Manager ref for update particle functions
     public ParticleManager particleManager;
 
@@ -80,6 +82,7 @@ public class standCorn : MonoBehaviour
             standLevel += 1;
             particleManager.UpdateCornParticles();
             levelUpPriceInitial = ((int)(levelUpPriceInitial * 1.14f));
+            audioSource.Play();
         }
         else if (totalRevenue.totalMoney >= levelUpPriceInitial)
         {
@@ -87,6 +90,7 @@ public class standCorn : MonoBehaviour
             standLevel += 1;
             particleManager.UpdateCornParticles();
             levelUpPriceInitial = ((int)(levelUpPriceInitial * 1.14f));
+            audioSource.Play();
         }
 
     }
