@@ -4,7 +4,7 @@ using UnityEngine;
 
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using UnityEngine.SocialPlatforms.Impl;
+//using UnityEngine.SocialPlatforms.Impl;
 
 public static class SaveDataManager
 {
